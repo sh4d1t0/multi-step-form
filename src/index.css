@@ -11,3 +11,67 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.bg-image {
+  /* The image used */
+  background-image: url(./quay-tower-1585643071-2.jpg);
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  /* Full height */
+  height: 100vh;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white !important;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+.ant-steps-item-title {
+  color: white !important;
+}
+
+.ant-divider-inner-text {
+  color: white !important;
+}
+
+.ant-typography {
+  color: white !important;
+}
+
+.ant-modal-content {
+  background-color: black !important;
+}
+.ant-modal-header {
+  background: black !important;
+  color: white !important;
+}
+.ant-modal-title {
+  color: white !important;
+}
+.ant-modal-close {
+  color: white !important;
+}
+
+label {
+  color: white !important;
+}
+
+form {
+  text-align: left;
+}

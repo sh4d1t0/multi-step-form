@@ -4,6 +4,7 @@ import { StateMachineProvider, createStore } from "little-state-machine";
 import { DevTool } from 'little-state-machine-devtools';
 import { Row, Col } from "antd";
 import 'antd/dist/antd.css';
+import Login from "./components/Login";
 import Step1 from "./components/Step1";
 import Step2 from "./components/Step2";
 import Step3 from "./components/Step3";
@@ -32,13 +33,14 @@ function App() {
   return (
     <StateMachineProvider>
       <DevTool />
+      <div className="bg-image"></div>
       <Row justify="center">
         <Col span={20} style={{ textAlign: 'center' }}><h1>Registro</h1></Col>
       </Row>
-      <Row justify="center">
+      <Row justify="center" className="bg-text">
           <Col span={20}>
             <Router>
-              <Route exact path="/" component={Step1} />
+              <Route exact path="/" component={Login} />
               <Route path="/datos-cliente" component={Step1} />
               <Route path="/direccion-apartamento" component={Step2} />
               <Route path="/datos-apartamento" component={Step3} />

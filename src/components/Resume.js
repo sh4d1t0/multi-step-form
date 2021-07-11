@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import { Row, Col, Steps, Divider, Typography } from 'antd';
 import { useStateMachine } from "little-state-machine";
+import { withRouter } from 'react-router';
 import updateAction from "./updateAction";
 
 const Resume = (props) => {
@@ -60,4 +61,4 @@ const Resume = (props) => {
     );
 };
 
-export default Resume;
+export default withRouter(Resume);
